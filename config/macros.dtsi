@@ -1,3 +1,12 @@
+  // Just calls lm with LGUI and layer 4 as the args so that we have a
+  // zero-arg macro we can use in a hold-tap behavior. It seems like
+  // there should be a nicer way to do this but I can't figure it out.
+  g4: lgui_mo4 {
+    compatible = "zmk,behavior-macro";
+    label = "macro_lgui_mo4";
+    #binding-cells = <0>;
+    bindings = <&lm 4 LGUI>;
+  };
   /**
    * Temporarily switches to a layer (`&mo`) while a modifier is held.
    * Analogous to QMK's `LM()`, using a parameterized macro.
