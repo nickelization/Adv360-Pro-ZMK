@@ -74,5 +74,14 @@
         &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
       >;
     };
+    fakecaps {
+      bindings = <
+        &trans &trans &trans &trans      &trans    &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans      &trans    &trans  &none                                           &none  &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans      &trans    &trans  &none        &trans &trans &trans &trans        &none  &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &LS(GRAVE)  &kp GRAVE &trans                      &trans &trans                      &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &LS(TAB)    &kp TAB               &trans &trans &trans &trans &trans &trans                 &trans &trans &trans &trans &trans
+      >;
+    };
   };
 };
