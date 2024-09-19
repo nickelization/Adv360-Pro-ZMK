@@ -5,7 +5,10 @@
     compatible = "zmk,behavior-macro";
     label = "macro_lgui_mo4";
     #binding-cells = <0>;
-    bindings = <&lm 4 LGUI>;
+    bindings = <&macro_press &lm 4 LGUI>
+             , <&macro_pause_for_release>
+             , <&macro_release &lm 4 LGUI>
+             ;
   };
   /**
    * Temporarily switches to a layer (`&mo`) while a modifier is held.
