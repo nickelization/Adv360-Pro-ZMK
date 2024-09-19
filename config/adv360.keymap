@@ -26,6 +26,13 @@
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
+      fc: fakecaps_modifier {
+          compatible = "zmk,behavior-hold-tap";
+          #binding-cells = <2>;
+          flavor = "hold-preferred";
+          tapping-term-ms = <200>;
+          bindings = <&lm 4>, <&kp>;
+      };
     };
 
   keymap {
