@@ -1,12 +1,3 @@
-  delword: delword {
-    compatible = "zmk,behavior-macro";
-    label = "delword";
-    #binding-cells = <0>;
-    bindings = <&macro_press &kp LALT>
-    , <&macro_tap &kp BSPC>
-    , <&macro_release &kp LALT>
-    ;
-  };
   /**
    * Temporarily switches to a layer (`&mo`) while a modifier is held.
    * Analogous to QMK's `LM()`, using a parameterized macro.
