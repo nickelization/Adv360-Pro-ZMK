@@ -1,9 +1,9 @@
-  // Just calls lm with LGUI and layer 4 as the args so that we have a
+  // Just calls lm with LCTRL and layer 4 as the args so that we have a
   // zero-arg macro we can use in a hold-tap behavior. It seems like
   // there should be a nicer way to do this but I can't figure it out.
-  g4: lgui_mo4 {
+  c4: lctrl_mo4 {
     compatible = "zmk,behavior-macro";
-    label = "macro_lgui_mo4";
+    label = "macro_lctrl_mo4";
     #binding-cells = <0>;
     bindings = <&macro_press &lm 4 LCTRL>
              , <&macro_pause_for_release>
